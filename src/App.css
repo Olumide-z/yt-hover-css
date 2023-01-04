@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.image-1, .image-2{
+  height: 400px;
+  width: 300px;
+  cursor: pointer;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.image-2:hover{
+  opacity: 1;
+}
